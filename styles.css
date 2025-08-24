@@ -440,6 +440,65 @@ section h2 {
   text-decoration: underline;
 }
 
+/* Style file input for better aesthetics */
+.form-group input[type="file"] {
+  /* Harmonise the file input with our colour palette */
+  padding: 0.6rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  background: var(--light);
+  font-size: 1rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+/* Customise the actual file selection button (cross-browser support) */
+.form-group input[type="file"]::-webkit-file-upload-button {
+  background: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+.form-group input[type="file"]::file-selector-button {
+  background: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+/* Legal section styling */
+.legal {
+  background: var(--white);
+  color: var(--secondary-color);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.legal h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-color);
+}
+
+.legal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.legal li {
+  margin-bottom: 0.5rem;
+}
+
 /* Footer */
 footer {
   background: var(--secondary-color);
