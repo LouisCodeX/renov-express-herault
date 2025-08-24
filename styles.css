@@ -3,12 +3,13 @@
 
 :root {
   /* Palette revisit : des teintes plus claires et sophistiquées. */
-  --primary-color: #A54A3A;      /* terracotta claire pour les titres et boutons */
+  --primary-color: A54A3A;      /* terracotta claire pour les titres et boutons */
   --secondary-color: #4B3A35;    /* marron doux pour les textes et le pied de page */
   --light-color: #F8F5F2;        /* blanc cassé très clair pour les arrière‑plans */
   --accent-color: #E0C0A8;       /* beige sable pour les touches d’accent */
   --text-color: #333;            /* couleur par défaut des textes */
   --white: #fff;                 /* blanc pur */
+  
 }
 
 * {
@@ -71,6 +72,7 @@ header {
 }
 
 .logo-text {
+
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
@@ -102,7 +104,8 @@ nav a:hover {
 .hero {
   position: relative;
   background: url('hero_bg.png') no-repeat center/cover;
-  min-height: 500px;
+  m
+    in-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,6 +121,7 @@ nav a:hover {
   bottom: 0;
   /* Overlay encore plus léger pour laisser respirer le motif du héros. */
   background: rgba(75, 58, 53, 0.35);
+  
 }
 
 .hero-content {
@@ -153,6 +157,7 @@ nav a:hover {
 
 .cta-btn:hover {
   background: #7B2C3A;
+  
 }
 
 /* Section base styles */
@@ -181,6 +186,7 @@ section h2 {
   margin: 0 auto;
   padding: 0 1rem;
 }
+
 
 .service-card {
   background: var(--light-color);
