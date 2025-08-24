@@ -1,98 +1,202 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rénov Express GO – Maçonnerie & Gros Œuvre Hérault</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orb &amp; Linteau – Entreprise locale de maçonnerie générale et rénovation complète à Béziers et dans l’Hérault. Spécialistes des travaux structurants et tous corps d’état. Devis gratuit.">
+    <meta name="keywords" content="maçonnerie Hérault, rénovation Béziers, Orb Linteau, ouverture mur porteur, dalles, fondations, reprises sous-œuvre, rénovation complète, artisan">
+    <title>Orb &amp; Linteau – Maçonnerie &amp; rénovation en Hérault</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-u4hUQVqR+uZP7UG1lQJnKki+YWg2Z2F/B7r/hwdAs5dpMX6k3cGKo/Sd9RfuvoNrtuEbdMqSpqwC+3RB+VPK4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="container header-container">
-      <!-- Logo wrapper containing our custom logo and text -->
-      <div class="logo-wrapper">
-        <a href="#">
-        <!-- Embedded base64 logo to avoid external file -->
-        <img src="data:image/png;base64,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"]" alt="Logo Rénov Express Hérault" class="logo-img">
-        </a>
-        <span class="logo-text">Rénov&nbsp;Express&nbsp;GO</span>
-      </div>
-      <!-- Navigation links -->
-      <nav>
-        <a href="#services">Services</a>
-        <a href="#about">À propos</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-  <section class="hero">
-    <div class="overlay"></div>
-    <div class="container hero-content">
-      <h1>Vos finitions, sans finasser</h1>
-      <p>Maçonnerie générale, rénovation tous&nbsp;corps&nbsp;d'état et gros&nbsp;œuvre en Hérault. Ouverture de murs porteurs, dalles, fondations et reprises structurelles – qualité et délais assurés.</p>
-      <a href="#contact" class="cta-btn">Obtenir un devis</a>
-    </div>
-  </section>
-  <main>
-    <section id="services">
-      <div class="container">
-        <h2>Nos services</h2>
-        <div class="service-grid">
-          <div class="service-card">
-            <img src="https://source.unsplash.com/600x400/?construction,beam" alt="Ouverture de mur porteur">
-            <h3>Ouverture de murs porteurs</h3>
-            <p>Création d'ouvertures et pose de poutres IPN/HEB avec étude structurelle, étaiement et finitions soignées.</p>
-          </div>
-          <div class="service-card">
-            <img src="https://source.unsplash.com/600x400/?concrete,foundation" alt="Dalles et fondations">
-            <h3>Dalles &amp; Fondations</h3>
-            <p>Réalisation de dalles béton, longrines et renforts de fondations pour garages, extensions, terrasses et piscines.</p>
-          </div>
-          <div class="service-card">
-            <img src="https://source.unsplash.com/600x400/?construction,renovation" alt="Reprises en sous‑œuvre">
-            <h3>Reprises en sous‑œuvre</h3>
-            <p>Renforcement et mise aux normes de structures existantes : linteaux, reprises de fissures, sous‑œuvre et appuis.</p>
-          </div>
-          <div class="service-card">
-            <img src="https://source.unsplash.com/600x400/?renovation,house" alt="Rénovation complète">
-            <h3>Rénovation complète</h3>
-            <p>Gestion de tous vos travaux, du gros œuvre aux finitions : maçonnerie, plâtrerie, carrelage, peinture et aménagement intérieur.</p>
-          </div>
+    <header id="top">
+        <div class="header-container">
+            <div class="logo-wrapper">
+                <img src="logo_orb_linteau.png" alt="Logo Orb &amp; Linteau" class="logo-img">
+                <span class="logo-text">Orb &amp; Linteau</span>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#realisations">Réalisations</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#temoignages">Témoignages</a></li>
+                    <li><a href="#blog">Blog / FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Vos finitions, sans finasser</h1>
+            <p>Maçonnerie générale, rénovation tous corps d’état et gros œuvre en Hérault. Ouverture de murs porteurs, dalles, fondations et reprises structurelles – qualité et délais assurés.</p>
+            <a href="#contact" class="cta-btn">Obtenir un devis</a>
+        </div>
     </section>
-    <section id="about">
-      <div class="container">
-        <h2>À propos de nous</h2>
-        <p>Rénov&nbsp;Express&nbsp;GO est une société héraultaise spécialisée dans les chantiers lourds et les travaux tous&nbsp;corps&nbsp;d’état. Nous prenons en charge la maçonnerie, la rénovation globale et l’aménagement complet de votre habitation ou de vos locaux. Notre équipe s’appuie sur une expertise de terrain et des partenariats avec des bureaux d’études pour garantir des ouvrages sûrs et conformes. Nous opérons à Béziers, Agde, Sète et dans tout le département de l’Hérault, avec des devis transparents et des délais respectés.</p>
-      </div>
+
+    <section id="services" class="services">
+        <h2>Nos services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="icon"><i class="fas fa-door-open"></i></div>
+                <h3>Ouverture de murs porteurs</h3>
+                <p>Création d’ouvertures et pose de poutres IPN/HEB avec étude structurelle, étaiement et finitions soignées. Durée typique : 2 à 5 jours.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon"><i class="fas fa-layer-group"></i></div>
+                <h3>Dalles &amp; Fondations</h3>
+                <p>Réalisation de dalles béton, longrines et renforts pour extensions, terrasses et piscines. Durée typique : 1 à 3 semaines.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon"><i class="fas fa-house-damage"></i></div>
+                <h3>Reprises en sous‑œuvre</h3>
+                <p>Renforcement et mise aux normes de structures existantes : linteaux, reprises de fissures, sous‑œuvre et appuis. Durée typique : 1 à 4 semaines.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon"><i class="fas fa-hard-hat"></i></div>
+                <h3>Rénovation complète</h3>
+                <p>Coordination tous corps d’état pour des rénovations intérieures et extérieures clés en main : maçonnerie, plomberie, électricité, menuiserie et finitions. Durée selon projet.</p>
+            </div>
+        </div>
     </section>
-    <section id="contact">
-      <div class="container">
+
+    <section id="realisations" class="realisations">
+        <h2>Réalisations</h2>
+        <p class="section-intro">Quelques projets récents pour illustrer notre savoir‑faire et notre attention aux détails.</p>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="project_living.png" alt="Rénovation salon à Béziers">
+                <div class="portfolio-caption">
+                    <h4>Salon rénové – Béziers</h4>
+                    <p>Transformation complète d’un salon traditionnel en espace contemporain et chaleureux.</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="project_terrace.png" alt="Rénovation terrasse à Agde">
+                <div class="portfolio-caption">
+                    <h4>Terrasse &amp; jardin – Agde</h4>
+                    <p>Création d’une terrasse en pierre naturelle avec zone végétalisée pour profiter de l’été.</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="project_kitchen.png" alt="Rénovation cuisine à Sète">
+                <div class="portfolio-caption">
+                    <h4>Cuisine &amp; séjour – Sète</h4>
+                    <p>Rénovation complète d’une cuisine ouverte sur séjour, associant briques apparentes et design moderne.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>À propos</h2>
+        <div class="about-content">
+            <p>Implantés à Béziers, nous sommes artisans maçons et spécialistes de la rénovation globale dans tout l’Hérault. Nous associons savoir‑faire traditionnel et technologies modernes pour assurer des chantiers exemplaires, respectueux des normes et de l’environnement.</p>
+            <ul>
+                <li>Expertise locale et équipes qualifiées</li>
+                <li>Assurance décennale et responsabilité civile</li>
+                <li>Devis détaillés et transparence budgétaire</li>
+                <li>Respect des délais et propreté des chantiers</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="temoignages" class="temoignages">
+        <h2>Témoignages</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial">
+                <p>« Entreprise sérieuse et travail impeccable ! Notre mur porteur a été ouvert sans aucune fissure et les finitions sont parfaites. »</p>
+                <span>— Jean M., Béziers</span>
+            </div>
+            <div class="testimonial">
+                <p>« Nous avons confié la création de notre terrasse à Orb &amp; Linteau. Résultat : magnifique terrasse, chantier propre et équipe sympathique. »</p>
+                <span>— Sophie L., Agde</span>
+            </div>
+            <div class="testimonial">
+                <p>« J’avais peur des travaux de reprise de fissures, mais tout s’est déroulé parfaitement. Je recommande à 100 %. »</p>
+                <span>— Ahmed B., Sète</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <h2>Blog &amp; FAQ</h2>
+        <div class="blog-grid">
+            <div class="blog-item">
+                <h4>Comment préparer l’ouverture d’un mur porteur ?</h4>
+                <p>Découvrez les étapes clés pour votre projet : étude structurelle, demande de permis, choix du professionnel, protections…</p>
+                <a href="#" class="read-more">Lire la suite</a>
+            </div>
+            <div class="blog-item">
+                <h4>Les coûts d’une dalle béton en Hérault</h4>
+                <p>Budget, facteurs d’évolution des prix et conseils pour optimiser votre investissement en fonction du terrain et du projet.</p>
+                <a href="#" class="read-more">Lire la suite</a>
+            </div>
+            <div class="blog-item">
+                <h4>Rénover un mas ancien : pièges et bonnes pratiques</h4>
+                <p>Électricité, plomberie, structure : comment préserver le charme tout en assurant la sécurité et la durabilité.</p>
+                <a href="#" class="read-more">Lire la suite</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
         <h2>Contact</h2>
-        <p>Pour obtenir un devis ou poser vos questions, complétez ce formulaire et nous vous répondrons rapidement.</p>
-        <form action="mailto:contact@votredomaine.fr" method="post" enctype="text/plain">
-          <label for="name">Nom</label>
-          <input type="text" id="name" name="Nom" required>
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="Email" required>
-
-          <label for="phone">Téléphone</label>
-          <input type="tel" id="phone" name="Téléphone">
-
-          <label for="message">Message</label>
-          <textarea id="message" name="Message" rows="5" required></textarea>
-
-          <button type="submit" class="cta-btn">Envoyer</button>
-        </form>
-      </div>
+        <div class="contact-wrapper">
+            <form action="#" method="post" enctype="multipart/form-data" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Téléphone :</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="project">Type de projet :</label>
+                    <input type="text" id="project" name="project" placeholder="Ouverture, dalle, rénovation..." required>
+                </div>
+                <div class="form-group">
+                    <label for="budget">Budget estimé :</label>
+                    <input type="text" id="budget" name="budget" placeholder="ex : 5000–20000 €">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="photo">Photos (JPEG/PNG, max 5 Mo) :</label>
+                    <input type="file" id="photo" name="photo" accept=".jpg,.jpeg,.png">
+                </div>
+                    <button type="submit" class="cta-btn">Envoyer la demande</button>
+            </form>
+            <div class="contact-info">
+                <p><strong>Téléphone :</strong> <a href="tel:+33612345678">06 12 34 56 78</a></p>
+                <p><strong>Email :</strong> <a href="mailto:contact@orbetlinteau.fr">contact@orbetlinteau.fr</a></p>
+                <p><strong>Adresse :</strong> 15 Rue de la Maçonnerie, 34500 Béziers, France</p>
+                <p><strong>Horaires :</strong> lundi à vendredi 08 h – 18 h</p>
+            </div>
+        </div>
     </section>
-  </main>
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Rénov&nbsp;Express&nbsp;GO – Tous droits réservés.</p>
-    </div>
-  </footer>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Orb &amp; Linteau. Tous droits réservés.</p>
+            <p><a href="#top">Haut de page</a> · <a href="#">Mentions légales</a> · <a href="#">Politique de confidentialité</a></p>
+        </div>
+    </footer>
 </body>
 </html>
