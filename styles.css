@@ -1,0 +1,244 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background: #fff;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Flex layout for header container */
+header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo wrapper for image and text */
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Logo image styling */
+.logo-img {
+  height: 50px;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+/* Logo text styling */
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1E90FF;
+  display: inline-block;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1E90FF;
+  text-decoration: none;
+}
+
+header nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+header nav a {
+  margin-left: 1rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  color: #1E90FF;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  background-image: url('https://source.unsplash.com/1600x900/?construction,building');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin: 0 auto 1.5rem;
+  max-width: 800px;
+}
+
+.cta-btn {
+  background: #1E90FF;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.cta-btn:hover {
+  background: #0066CC;
+}
+
+/* Services section */
+#services {
+  padding: 4rem 0;
+}
+
+#services h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-card h3 {
+  margin: 1rem;
+  font-size: 1.25rem;
+  color: #1E90FF;
+}
+
+.service-card p {
+  margin: 0 1rem 1rem;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* About & Contact sections */
+#about, #contact {
+  padding: 4rem 0;
+}
+
+#about h2, #contact h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+#about p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form button {
+  margin-top: 1.5rem;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background: #f8f8f8;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
