@@ -146,11 +146,12 @@
     <!-- About section -->
     <section id="apropos" class="about">
         <div class="about-content">
+            <img src="founder_portrait.png" alt="Portrait du fondateur" class="about-portrait">
             <h2>À propos de nous</h2>
-            <p>Depuis plus de 15 ans, Orb & Linteau accompagne les particuliers et les investisseurs dans leurs projets de construction et de rénovation. Notre équipe de maçons expérimentés travaille avec des partenaires qualifiés pour offrir des prestations complètes et sur mesure. Nous allions savoir‑faire artisanal et rigueur professionnelle pour bâtir des espaces durables et harmonieux.</p>
+            <p>Depuis plus de 15 ans, nous bâtissons des espaces durables et harmonieux pour nos clients. <strong>Notre mission</strong> : mettre notre savoir‑faire au service de vos projets, avec passion et exigence.</p>
             <ul class="about-highlights">
                 <li><i class="fas fa-check-circle"></i> Entreprise familiale basée à Béziers</li>
-                <li><i class="fas fa-hard-hat"></i> Certifications et assurances RC pro &amp; décennale</li>
+                <li><i class="fas fa-hard-hat"></i> Certifications et assurances RC Pro &amp; décennale</li>
                 <li><i class="fas fa-handshake"></i> Interlocuteur unique pour un suivi personnalisé</li>
             </ul>
         </div>
@@ -160,17 +161,32 @@
         <h2>Ils nous ont fait confiance</h2>
         <div class="testimonials-grid">
             <div class="testimonial">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p>« La création de notre terrasse a été parfaitement menée : chantier propre, délais respectés et finitions impeccables. »</p>
-                <span class="client">– Camille, Béziers</span>
+                <div class="client-info">
+                    <span class="client-initials">C</span>
+                    <span class="client-name">Camille – Béziers</span>
+                </div>
             </div>
             <div class="testimonial">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p>« L’ouverture du mur porteur a transformé notre séjour. L’équipe est à l’écoute et a su nous conseiller. »</p>
-                <span class="client">– Julien, Marseillan</span>
+                <div class="client-info">
+                    <span class="client-initials">J</span>
+                    <span class="client-name">Julien – Marseillan</span>
+                </div>
             </div>
             <div class="testimonial">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p>« Travail sérieux pour la reprise de nos fondations. Je recommande Orb & Linteau pour leur professionnalisme ! »</p>
-                <span class="client">– Sophie, Sète</span>
+                <div class="client-info">
+                    <span class="client-initials">S</span>
+                    <span class="client-name">Sophie – Sète</span>
+                </div>
             </div>
+        </div>
+        <div class="testimonials-cta">
+            <a href="https://g.page/orb-linteau/reviews" target="_blank">Voir plus de témoignages</a>
         </div>
     </section>
     <!-- Blog & FAQ section (shortened posts) -->
@@ -198,34 +214,52 @@
     <section id="contact" class="contact">
         <h2>Contactez‑nous</h2>
         <div class="contact-wrap">
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Nom et prénom</label>
-                    <input type="text" id="name" name="name" required />
+            <form class="contact-form" id="quote-form">
+                <div class="form-step form-step-1">
+                    <div class="form-group">
+                        <label for="project-type">Type de projet</label>
+                        <select id="project-type" name="project-type" required>
+                            <option value="">Sélectionnez</option>
+                            <option value="ouverture">Ouverture de mur porteur</option>
+                            <option value="dalle">Dalles &amp; fondations</option>
+                            <option value="sous-oeuvre">Reprise en sous‑œuvre</option>
+                            <option value="renovation">Rénovation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Budget estimé</label>
+                        <select id="budget" name="budget" required>
+                            <option value="">Sélectionnez</option>
+                            <option value="<10k">Moins de 10 000 €</option>
+                            <option value="10-30k">10 000 € – 30 000 €</option>
+                            <option value="30-50k">30 000 € – 50 000 €</option>
+                            <option value="plus50k">Plus de 50 000 €</option>
+                        </select>
+                    </div>
+                    <button type="button" class="cta-btn" id="next-step">Suivant</button>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required />
+                <div class="form-step form-step-2" style="display:none;">
+                    <div class="form-group">
+                        <label for="name">Nom et prénom</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Votre message</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <div class="form-navigation">
+                        <button type="button" id="prev-step" class="btn-secondary">Précédent</button>
+                        <button type="submit" class="cta-btn">Envoyer</button>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="phone">Téléphone</label>
-                    <input type="tel" id="phone" name="phone" required />
-                </div>
-                <div class="form-group">
-                    <label for="project">Type de projet</label>
-                    <select id="project" name="project" required>
-                        <option value="">Sélectionnez</option>
-                        <option value="ouverture">Ouverture de mur porteur</option>
-                        <option value="dalle">Dalles &amp; fondations</option>
-                        <option value="sous-oeuvre">Reprise en sous‑œuvre</option>
-                        <option value="renovation">Rénovation</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="message">Votre message</label>
-                    <textarea id="message" name="message" rows="4"></textarea>
-                </div>
-                <button type="submit" class="cta-btn">Envoyer</button>
             </form>
             <div class="contact-info">
                 <p><i class="fas fa-phone"></i> <a href="tel:+33601234567">06 01 23 45 67</a></p>
@@ -241,5 +275,33 @@
         <p>SIRET : 88906486100012 – Assurance RC Pro &amp; décennale.</p>
         <p><a href="#top">Retour en haut</a></p>
     </footer>
+
+    <!-- Simple script to handle the two‑step contact form -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var nextBtn = document.getElementById('next-step');
+      var prevBtn = document.getElementById('prev-step');
+      if (nextBtn) {
+        nextBtn.addEventListener('click', function() {
+          var step1 = document.querySelector('.form-step-1');
+          var step2 = document.querySelector('.form-step-2');
+          if (step1 && step2) {
+            step1.style.display = 'none';
+            step2.style.display = 'block';
+          }
+        });
+      }
+      if (prevBtn) {
+        prevBtn.addEventListener('click', function() {
+          var step1 = document.querySelector('.form-step-1');
+          var step2 = document.querySelector('.form-step-2');
+          if (step1 && step2) {
+            step1.style.display = 'block';
+            step2.style.display = 'none';
+          }
+        });
+      }
+    });
+    </script>
 </body>
 </html>
