@@ -19,11 +19,11 @@
 <body>
     <header id="top">
         <div class="header-container">
-            <div class="logo-wrapper">
-                <!-- Updated logo without motto -->
+            <!-- Make the logo clickable to return to the top of the page -->
+            <a href="#top" class="logo-wrapper logo-link">
                 <img src="logo_orb_linteau_simple.png" alt="Logo Orb &amp; Linteau" class="logo-img">
                 <span class="logo-text">Orb &amp; Linteau</span>
-            </div>
+            </a>
             <nav>
                 <ul class="nav-menu">
                     <li><a href="#services">Services</a></li>
@@ -40,8 +40,9 @@
     <section class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Vos finitions, sans finasser</h1>
-            <p>Maçonnerie générale, rénovation tous corps d’état et gros œuvre en Hérault. Ouverture de murs porteurs, dalles, fondations et reprises structurelles – qualité et délais assurés.</p>
+            <!-- Titre et description remis au goût du jour : notez l’absence de motto pour un ton plus professionnel -->
+                <h1>Maçonnerie &amp; rénovations sur mesure en Hérault</h1>
+                <p>Basés à Béziers, nous imaginons et réalisons vos projets sur mesure : ouverture de murs porteurs, création de terrasses et fondations, reprises en sous‑œuvre, aménagement complet de cuisines et salles de bain, rénovations intérieures et extérieures. Au service des particuliers et investisseurs dans tout l’Hérault.</p>
             <a href="#contact" class="cta-btn">Obtenir un devis</a>
         </div>
     </section>
@@ -66,8 +67,8 @@
             </div>
             <div class="service-card">
                 <div class="icon"><i class="fas fa-hard-hat"></i></div>
-                <h3>Rénovation complète</h3>
-                <p>Coordination tous corps d’état pour des rénovations intérieures et extérieures clés en main : maçonnerie, plomberie, électricité, menuiserie et finitions. Durée selon projet.</p>
+                <h3>Rénovation intérieure &amp; extérieure</h3>
+                <p>Transformation complète de vos espaces de vie : de la cuisine à la salle de bain, du séjour aux façades et terrasses. Nous coordonnons maçonnerie, plomberie, électricité, menuiserie et finitions pour un résultat clé en main, sur mesure.</p>
             </div>
         </div>
     </section>
@@ -78,42 +79,42 @@
         <div class="portfolio-grid">
             <!-- New portfolio items showcasing recent projets in Béziers et Marseillan -->
             <div class="portfolio-item">
-                <img src="project_bathroom3.png" alt="Salle de bain rénovée – Béziers">
+                <a href="project_bathroom3.png" target="_blank"><img src="project_bathroom3.png" alt="Salle de bain rénovée – Béziers"></a>
                 <div class="portfolio-caption">
                     <h4>Salle de bain moderne – Béziers</h4>
                     <p>Transformation complète d’une salle de bain avec douche à l’italienne, meuble sur mesure et éléments design.</p>
                 </div>
             </div>
             <div class="portfolio-item">
-                <img src="project_living3.png" alt="Salon rénové – Béziers">
+                <a href="project_living3.png" target="_blank"><img src="project_living3.png" alt="Salon rénové – Béziers"></a>
                 <div class="portfolio-caption">
                     <h4>Salon &amp; escalier – Béziers</h4>
                     <p>Réaménagement d’un séjour étroit en espace lumineux avec escalier en bois et mobilier contemporain.</p>
                 </div>
             </div>
             <div class="portfolio-item">
-                <img src="project_kitchen3.png" alt="Cuisine rénovée – Béziers">
+                <a href="project_kitchen3.png" target="_blank"><img src="project_kitchen3.png" alt="Cuisine rénovée – Béziers"></a>
                 <div class="portfolio-caption">
                     <h4>Cuisine contemporaine – Béziers</h4>
                     <p>Installation d’une cuisine fonctionnelle avec plan de travail en pierre, électroménager intégrable et coin repas.</p>
                 </div>
             </div>
             <div class="portfolio-item">
-                <img src="project_loft2.png" alt="Aménagement loft – Béziers">
+                <a href="project_loft2.png" target="_blank"><img src="project_loft2.png" alt="Aménagement loft – Béziers"></a>
                 <div class="portfolio-caption">
                     <h4>Salon sous combles</h4>
                     <p>Création d’un loft chaleureux sous toiture avec terrasse tropézienne offrant une vue panoramique sur les toits.</p>
                 </div>
             </div>
             <div class="portfolio-item">
-                <img src="project_rooftop.png" alt="Terrasse ensoleillée – Marseillan">
+                <a href="project_rooftop.png" target="_blank"><img src="project_rooftop.png" alt="Terrasse ensoleillée – Marseillan"></a>
                 <div class="portfolio-caption">
                     <h4>Terrasse vue toits – Marseillan</h4>
                     <p>Aménagement d’une terrasse sur les toits avec mobilier en bois pour profiter des vues et du soleil.</p>
                 </div>
             </div>
             <div class="portfolio-item">
-                <img src="project_patio_flower.png" alt="Patio fleuri – Béziers">
+                <a href="project_patio_flower.png" target="_blank"><img src="project_patio_flower.png" alt="Patio fleuri – Béziers"></a>
                 <div class="portfolio-caption">
                     <h4>Patio fleuri – Béziers</h4>
                     <p>Aménagement d’un patio cosy avec banquette en bois et treillage fleuri pour un espace détente intimiste.</p>
@@ -158,29 +159,32 @@
         <div class="blog-grid">
             <div class="blog-item">
                 <h4>Comment préparer l’ouverture d’un mur porteur ?</h4>
-                <p>Découvrez les étapes clés pour votre projet : étude structurelle, demande de permis, choix du professionnel, protections…</p>
-                <a href="#" class="read-more">Lire la suite</a>
+                <p>Avant de toucher à un mur porteur, faites appel à un professionnel pour une étude structurelle. Un architecte ou un ingénieur calculera la section de la poutre nécessaire et vous accompagnera pour la déclaration préalable ou le permis de construire. Sur le chantier, on étaye soigneusement, on découpe le mur avec précision, on pose la poutre IPN ou HEB et on assure les finitions pour un rendu impeccable.</p>
             </div>
             <div class="blog-item">
                 <h4>Les coûts d’une dalle béton en Hérault</h4>
-                <p>Budget, facteurs d’évolution des prix et conseils pour optimiser votre investissement en fonction du terrain et du projet.</p>
-                <a href="#" class="read-more">Lire la suite</a>
+                <p>Le prix d’une dalle varie selon la surface, la préparation du sol et l’accessibilité. Comptez de 70 à 120 € par mètre carré pour une dalle de qualité hors terrassement. Ferraillage, dosage du béton et temps de séchage sont autant de paramètres qui influencent le budget. Faire appel à un maçon qualifié garantit une dalle plane et durable.</p>
             </div>
             <div class="blog-item">
                 <h4>Rénover un mas ancien : pièges et bonnes pratiques</h4>
-                <p>Électricité, plomberie, structure : comment préserver le charme tout en assurant la sécurité et la durabilité.</p>
-                <a href="#" class="read-more">Lire la suite</a>
+                <p>Rénover un mas demande un diagnostic complet : charpente, toiture, murs en pierre, réseaux électriques et sanitaires. L’objectif est de préserver l’authenticité tout en remettant aux normes. Faites appel à des spécialistes pour chaque corps de métier, planifiez les travaux étape par étape et prévoyez des imprévus afin de respecter budget et délais.</p>
             </div>
             <div class="blog-item">
                 <h4>Choisir son artisan maçon en Hérault</h4>
-                <p>Quels critères retenir pour sélectionner un maçon fiable ? Références locales, assurances, devis détaillé : nous vous guidons.</p>
-                <a href="#" class="read-more">Lire la suite</a>
+                <p>Pour sélectionner un maçon de confiance, consultez ses références locales, vérifiez ses assurances (décennale et responsabilité civile) et demandez plusieurs devis détaillés. Un bon professionnel saura vous conseiller sur les matériaux et techniques adaptés, respectera les normes en vigueur et établira un planning réaliste pour votre chantier.</p>
             </div>
             <div class="blog-item">
                 <h4>Entretien d’une terrasse en bois</h4>
-                <p>Huile, saturateur, entretien annuel : nos conseils pour maintenir votre terrasse en bois en parfait état dans le Sud.</p>
-                <a href="#" class="read-more">Lire la suite</a>
+                <p>Un entretien régulier est indispensable pour prolonger la vie d’une terrasse en bois. Nettoyez les lames avec un balai brosse et de l’eau savonneuse, appliquez un saturateur ou une huile une fois par an pour nourrir le bois et surveillez l’étanchéité des fixations. Privilégiez des essences résistantes ou traitées pour affronter le climat méditerranéen.</p>
             </div>
+                <div class="blog-item">
+                    <h4>Rénover sa cuisine : étapes et conseils</h4>
+                    <p>Pour transformer une cuisine, commencez par définir vos besoins : ergonomie, rangements et style. Faites appel à un professionnel pour préparer le chantier, remplacer les réseaux si nécessaire et installer de nouveaux éléments. Choisissez des matériaux durables et optimisez l’éclairage pour un espace fonctionnel et convivial.</p>
+                </div>
+                <div class="blog-item">
+                    <h4>Moderniser sa salle de bain : idées et budget</h4>
+                    <p>Une salle de bain réussie marie confort et esthétique. Douche à l’italienne, baignoire îlot, carrelage grand format ou faïence colorée : les possibilités sont nombreuses. Prévoyez un budget pour la plomberie, l’étanchéité, les revêtements et le mobilier. Un artisan expérimenté saura orchestrer les travaux et vous guider dans vos choix.</p>
+                </div>
         </div>
     </section>
 
@@ -219,7 +223,7 @@
                     <button type="submit" class="cta-btn">Envoyer la demande</button>
             </form>
             <div class="contact-info">
-                <p><strong>Téléphone :</strong> <a href="tel:+33612345678">06 12 34 56 78</a></p>
+                <p><strong>Téléphone :</strong> <a href="tel:+33695951631">06 95 95 16 31</a></p>
                 <p><strong>Email :</strong> <a href="mailto:contact@orbetlinteau.fr">contact@orbetlinteau.fr</a></p>
                 <p><strong>Adresse :</strong> 63b Avenue du 22 Août, 34500 Béziers, France</p>
                 <p><strong>Horaires :</strong> lundi à vendredi 08 h – 18 h</p>
@@ -227,24 +231,11 @@
         </div>
     </section>
 
-    <!-- Legal information section -->
-    <section id="legal" class="legal">
-        <h2>Informations juridiques</h2>
-        <p>Entreprise : Orb &amp; Linteau – artisan maçon</p>
-        <ul>
-            <li><strong>SIREN :</strong> 830 507 190</li>
-            <li><strong>SIRET (siège) :</strong> 830 507 190 00031</li>
-            <li><strong>Forme juridique :</strong> Entrepreneur individuel</li>
-            <li><strong>Numéro de TVA :</strong> FR49830507190</li>
-            <li><strong>Inscription au RCS :</strong> Non inscrit</li>
-            <li><strong>Inscription au RNE :</strong> INSCRIT – le 23/06/2017 (Louis Benassy)</li>
-        </ul>
-    </section>
 
     <footer>
         <div class="footer-content">
             <p>&copy; 2025 Orb &amp; Linteau. Tous droits réservés.</p>
-            <p><a href="#top">Haut de page</a> · <a href="#legal">Mentions légales</a> · <a href="#">Politique de confidentialité</a></p>
+            <p><a href="#top">Haut de page</a> · <a href="legal.html">Mentions légales</a> · <a href="#">Politique de confidentialité</a></p>
         </div>
     </footer>
 </body>
