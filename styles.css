@@ -7,16 +7,19 @@
     * Retains the existing responsive grid and typography definitions.
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Merriweather:wght@300;400&display=swap');
+/* Import refined typefaces: Playfair Display for headings and Inter for body text */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap');
 
 /* Base palette definitions (overriding older values). */
 :root {
-  --primary-color: #004E7C;      /* bleu marine profond pour titres et éléments principaux */
-  --secondary-color: #333333;    /* gris charbon pour le texte et les arrière‑plans foncés */
-  --light-color: #F7F4EF;        /* crème très clair pour les arrière‑plans */
-  --accent-color: #F5A623;       /* orange doré pour les appels à l’action */
-  --text-color: #333333;         /* couleur de texte par défaut */
-  --white: #ffffff;              /* blanc pur */
+  /* Pastel‑based palette inspired by the South of France */
+  --warm-terracotta: #DFA79A;  /* buttons, small highlights */
+  --soft-azure: #B4D7DA;       /* links, active states */
+  --sage-green: #B4C3A7;       /* hover states, secondary buttons */
+  --lavender: #C8BCD7;         /* dividers, badges */
+  --warm-sand: #F6F0E6;        /* main background, card fills */
+  --charcoal: #3D3A34;         /* primary headings and body copy */
+  --white: #ffffff;            /* white */
 }
 
 * {
@@ -25,9 +28,9 @@
 
 body {
   margin: 0;
-  font-family: 'Merriweather', serif;
-  color: var(--text-color);
-  background: var(--light-color);
+  font-family: 'Inter', sans-serif;
+  color: var(--charcoal);
+  background: var(--warm-sand);
   line-height: 1.6;
 }
 
@@ -38,12 +41,12 @@ header {
 }
 
 header .logo {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 1.4rem;
   margin: 0;
   padding: 1rem 0;
-  color: var(--primary-color);
+  color: var(--charcoal);
 }
 
 nav {
@@ -60,21 +63,21 @@ nav {
 
 .nav-menu li a {
   text-decoration: none;
-  color: var(--secondary-color);
-  font-family: 'Montserrat', sans-serif;
+  color: var(--charcoal);
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
 }
 
 /* Language toggle */
-.language-toggle {
-  background: var(--light-color);
+ .language-toggle {
+  background: var(--warm-sand);
   text-align: right;
   padding: 0.3rem 1rem;
   font-size: 0.85rem;
 }
 
 .language-toggle a {
-  color: var(--primary-color);
+  color: var(--warm-terracotta);
   text-decoration: none;
   margin-left: 0.4rem;
 }
@@ -86,8 +89,8 @@ nav {
 /* Hero */
 .hero {
   position: relative;
-  background: url('hero_bg.png') no-repeat center/cover;
-  color: var(--white);
+  background: url('pattern_hero.png') no-repeat center/cover;
+  color: var(--charcoal);
   min-height: 60vh;
   display: flex;
   align-items: center;
@@ -103,7 +106,7 @@ nav {
   right: 0;
   bottom: 0;
   /* Overlay lightened for greater readability */
-  background: rgba(75, 58, 53, 0.2);
+  background: rgba(246, 240, 230, 0.8);
 }
 
 .hero-content {
@@ -114,10 +117,11 @@ nav {
 }
 
 .hero-content h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: var(--charcoal);
 }
 
 .hero-content p {
@@ -126,9 +130,9 @@ nav {
 }
 
 .cta-btn {
-  font-family: 'Montserrat', sans-serif;
-  background: var(--accent-color);
-  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  background: var(--warm-terracotta);
+  color: var(--charcoal);
   padding: 0.8rem 1.6rem;
   border-radius: 4px;
   text-decoration: none;
@@ -138,7 +142,7 @@ nav {
 }
 
 .cta-btn:hover {
-  background: #D48A1B;
+  background: #C98C7D;
 }
 
 /* Services */
@@ -147,9 +151,10 @@ nav {
 }
 
 .services h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   text-align: center;
   margin-bottom: 2rem;
+  color: var(--charcoal);
 }
 
 .services-grid {
@@ -162,10 +167,10 @@ nav {
 }
 
 .service-card {
-  background: var(--light-color);
+  background: var(--warm-sand);
   border-radius: 8px;
   padding: 2rem 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s;
   text-align: center;
 }
@@ -176,13 +181,14 @@ nav {
 
 .service-card .icon {
   font-size: 2rem;
-  color: var(--primary-color);
+  color: var(--soft-azure);
   margin-bottom: 1rem;
 }
 
 .service-card h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   margin-bottom: 0.5rem;
+  color: var(--charcoal);
 }
 
 /* Bullet list inside service cards */
@@ -192,25 +198,26 @@ nav {
   margin: 0 0 0.8rem 0;
   padding-left: 1.2rem;
   font-size: 0.95rem;
-  color: var(--secondary-color);
+  color: var(--charcoal);
 }
 
 .service-card .duration {
   font-weight: 600;
   margin-top: 0.3rem;
-  color: var(--primary-color);
+  color: var(--warm-terracotta);
 }
 
 /* Portfolio */
 .portfolio {
-  background: var(--white);
+  background: var(--warm-sand);
   padding: 4rem 0;
 }
 
 .portfolio h2 {
   text-align: center;
   margin-bottom: 2rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
+  color: var(--charcoal);
 }
 
 .portfolio-grid {
@@ -232,6 +239,8 @@ nav {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .portfolio-caption {
@@ -239,13 +248,13 @@ nav {
   bottom: 0;
   width: 100%;
   padding: 0.8rem;
-  background: rgba(0, 0, 0, 0.4); /* lightened overlay */
-  color: var(--white);
+  background: rgba(246, 240, 230, 0.9); /* pale overlay ensures legibility */
+  color: var(--charcoal);
 }
 
 .portfolio-caption h4 {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 1.1rem;
   margin-bottom: 0.3rem;
 }
@@ -253,11 +262,12 @@ nav {
 .portfolio-caption p {
   margin: 0;
   font-size: 0.85rem;
+  font-family: 'Inter', sans-serif;
 }
 
 /* About */
 .about {
-  background: var(--white);
+  background: var(--warm-sand);
   padding: 4rem 0;
 }
 
@@ -270,7 +280,8 @@ nav {
 .about h2 {
   text-align: center;
   margin-bottom: 1.5rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
+  color: var(--charcoal);
 }
 
 .about-highlights {
@@ -288,7 +299,7 @@ nav {
 
 .about-highlights li i {
   margin-right: 0.5rem;
-  color: var(--primary-color);
+  color: var(--soft-azure);
 }
 
 /* Portrait image in the about section */
@@ -298,18 +309,20 @@ nav {
   border-radius: 8px;
   display: block;
   margin: 0 auto 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 /* Testimonials */
 .testimonials {
-  background: var(--light-color);
+  background: var(--warm-sand);
   padding: 4rem 0;
 }
 
 .testimonials h2 {
   text-align: center;
   margin-bottom: 2rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
+  color: var(--charcoal);
 }
 
 .testimonials-grid {
@@ -333,7 +346,7 @@ nav {
 /* Star ratings within testimonials */
 .testimonial .stars {
   margin-bottom: 0.5rem;
-  color: var(--accent-color);
+  color: var(--warm-terracotta);
   font-size: 0.9rem;
 }
 
@@ -350,8 +363,8 @@ nav {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: var(--primary-color);
-  color: var(--white);
+  background: var(--soft-azure);
+  color: var(--charcoal);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -360,7 +373,7 @@ nav {
 
 .client-name {
   font-weight: 600;
-  color: var(--secondary-color);
+  color: var(--charcoal);
 }
 
 /* CTA under testimonials */
@@ -370,7 +383,7 @@ nav {
 }
 
 .testimonials-cta a {
-  color: var(--primary-color);
+  color: var(--warm-terracotta);
   font-weight: 600;
   text-decoration: none;
 }
@@ -386,19 +399,20 @@ nav {
 
 .testimonial .client {
   font-weight: 600;
-  color: var(--secondary-color);
+  color: var(--charcoal);
 }
 
 /* Blog */
 .blog {
-  background: var(--white);
+  background: var(--warm-sand);
   padding: 4rem 0;
 }
 
 .blog h2 {
   text-align: center;
   margin-bottom: 2rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
+  color: var(--charcoal);
 }
 
 .blog-grid {
@@ -411,10 +425,10 @@ nav {
 }
 
 .blog-card {
-  background: var(--light-color);
+  background: var(--white);
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s;
 }
 
@@ -425,7 +439,7 @@ nav {
 .blog-card h3 {
   margin-top: 0;
   margin-bottom: 0.8rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .blog-card p {
@@ -434,10 +448,10 @@ nav {
 }
 
 .blog-card .read-more {
-  color: var(--primary-color);
+  color: var(--soft-azure);
   text-decoration: none;
   font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .blog-card .read-more:hover {
@@ -446,14 +460,15 @@ nav {
 
 /* Contact */
 .contact {
-  background: var(--light-color);
+  background: var(--warm-sand);
   padding: 4rem 0;
 }
 
 .contact h2 {
   text-align: center;
   margin-bottom: 2rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
+  color: var(--charcoal);
 }
 
 .contact-wrap {
@@ -488,7 +503,7 @@ nav {
   padding: 0.6rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-family: 'Merriweather', serif;
+  font-family: 'Inter', sans-serif;
   font-size: 0.95rem;
 }
 
@@ -507,7 +522,7 @@ nav {
 
 .contact-info i {
   margin-right: 0.6rem;
-  color: var(--primary-color);
+  color: var(--soft-azure);
 }
 
 /* Multi-step form navigation */
@@ -519,35 +534,33 @@ nav {
 }
 
 .btn-secondary {
-  background: var(--light-color);
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  background: var(--warm-sand);
+  color: var(--soft-azure);
+  border: 1px solid var(--soft-azure);
   padding: 0.6rem 1.2rem;
   border-radius: 4px;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   transition: background 0.2s;
 }
 
 .btn-secondary:hover {
-  background: var(--accent-color);
-  color: var(--white);
+  background: var(--soft-azure);
+  color: var(--charcoal);
 }
 
 /* Footer */
 footer {
-  background: var(--white);
+  background: var(--warm-sand);
   text-align: center;
   padding: 2rem 1rem;
   font-size: 0.9rem;
-  color: var(--secondary-color);
+  color: var(--charcoal);
 }
-
 footer a {
-  color: var(--primary-color);
+  color: var(--soft-azure);
   text-decoration: none;
 }
-
 footer a:hover {
   text-decoration: underline;
 }
