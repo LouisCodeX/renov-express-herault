@@ -592,3 +592,23 @@ footer a:hover {
     text-align: center;
   }
 }
+
+:root {
+  --primary-color: #004E7C; /* bleu marine profond pour les titres et boutons */
+  --secondary-color: #333333; /* gris charbon pour les textes et pied de page */
+  --light-color: #F7F4EF; /* crème très clair pour les arrière-plans */
+  --accent-color: #F5A623; /* orange doré pour les touches d'accent */
+  --text-color: #333333; /* couleur par défaut des textes */
+  --white: #ffffff; /* blanc pur */
+}
+/* Override hero overlay background for better contrast */
+.hero .overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Update CTA button hover color to complement new palette */
+.cta-btn:hover {
+  background: #003C5A;
+}
+
+
