@@ -7,9 +7,10 @@ Ce dépôt contient le code source d’un site vitrine pour **Orb & Linteau**,
 - **`index.html`** : la page principale du site, structurée en sections (header, hero, services, réalisations, à propos, témoignages, blog/FAQ, contact et footer). Le contenu est rédigé en français, optimisé pour le référencement local et facile à modifier.
 - **`styles.css`** : feuille de style complète qui définit la palette de couleurs (rouge profond et anthracite), les typographies (Montserrat et Merriweather), la mise en page responsive, les icônes Font Awesome et les animations de survol. Elle gère également l’apparence des formulaires, du portfolio et des témoignages.
 - **Images** : 
-  - `logo_orb_linteau.png` – logo officiel (fichier inclus) utilisé dans l’en‑tête.  
+  - `logo_orb_linteau_simple.png` – logo officiel sans devise utilisé dans l’en‑tête.  
   - `hero_bg.png` – image de fond personnalisée pour la section hero.  
-  - `project_living.png`, `project_terrace.png`, `project_kitchen.png` – photos stylisées illustrant des réalisations (salon rénové, terrasse/jardin et cuisine/séjour).  
+  - `project_bathroom3.png`, `project_living3.png`, `project_kitchen3.png`, `project_loft2.png`, `project_rooftop.png`, `project_patio_flower.png` – photos de réalisations récentes à Béziers et Marseillan (nouvelle salle de bain, salon et escalier, cuisine contemporaine, salon sous combles, terrasse vue toits, patio fleuri).  
+  - `favicon.png` – icône simplifiée de l’arche et du linteau pour l’onglet du navigateur.
   - D’autres images peuvent être ajoutées au besoin pour enrichir la galerie.
 - **`README.md`** : ce fichier qui décrit la structure et fournit des instructions d’utilisation et de déploiement.
 
