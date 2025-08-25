@@ -19,6 +19,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-dyZ8N6CBhQ1B5QG1e4k2oI9cFl5q3t+8p0hC3sU8T8aLKZr9uC/3mKf7y+7IcI7cMwjY4X0PpVA+Slr7ZfXp3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon for browser tab -->
+    <link rel="icon" href="logo_orb_linteau_simple.png" type="image/png" />
+
+    <!-- Open Graph image for social previews -->
+    <meta property="og:image" content="pattern_rustic.png" />
+    <meta name="twitter:image" content="pattern_rustic.png" />
 </head>
 <body>
     <!-- Language toggle (added in French version) -->
@@ -45,7 +52,7 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1>Maçonnerie & rénovations sur mesure en Hérault</h1>
-            <p>Basés à Béziers, nous imaginons et réalisons vos projets : ouverture de murs porteurs, création de terrasses et fondations, reprises en sous‑œuvre, aménagement complet de cuisines et salles de bain, rénovations intérieures et extérieures. Au service des particuliers et investisseurs dans tout l’Hérault.</p>
+            <p>Basés à Béziers, nous imaginons et réalisons vos projets : ouvertures de murs porteurs, création de terrasses et de fondations, aménagements complets de salles de bain et de cuisines, ainsi que toutes vos rénovations intérieures et extérieures. Forte de plus de 15 ans d’expérience d’investisseur en Hérault, notre équipe travaille avec des artisans triés sur le volet pour des réalisations soignées et durables.</p>
             <a href="#contact" class="cta-btn">Obtenir un devis</a>
         </div>
     </section>
@@ -153,8 +160,10 @@
             <p>Depuis plus de 15 ans, nous bâtissons des espaces durables et harmonieux pour nos clients. <strong>Notre mission</strong> : mettre notre savoir‑faire au service de vos projets, avec passion et exigence.</p>
             <ul class="about-highlights">
                 <li><i class="fas fa-check-circle"></i> Entreprise familiale basée à Béziers</li>
-                <li><i class="fas fa-hard-hat"></i> Certifications et assurances RC Pro &amp; décennale</li>
-                <li><i class="fas fa-handshake"></i> Interlocuteur unique pour un suivi personnalisé</li>
+                <li><i class="fas fa-handshake"></i> Plus de 15 ans d’expérience d’investisseur dans l’Hérault</li>
+                <li><i class="fas fa-users"></i> Collaboration avec des artisans locaux triés sur le volet</li>
+                <li><i class="fas fa-certificate"></i> Certifications et assurances RC Pro &amp; décennale</li>
+                <li><i class="fas fa-user-tie"></i> Interlocuteur unique pour un suivi personnalisé</li>
             </ul>
         </div>
     </section>
@@ -220,13 +229,7 @@
                 <div class="form-step form-step-1">
                     <div class="form-group">
                         <label for="project-type">Type de projet</label>
-                        <select id="project-type" name="project-type" required>
-                            <option value="">Sélectionnez</option>
-                            <option value="ouverture">Ouverture de mur porteur</option>
-                            <option value="dalle">Dalles &amp; fondations</option>
-                            <option value="sous-oeuvre">Reprise en sous‑œuvre</option>
-                            <option value="renovation">Rénovation</option>
-                        </select>
+                        <input type="text" id="project-type" name="project-type" placeholder="Décrivez brièvement votre projet (mur porteur, dalle, cuisine, salle de bain, etc.)" required />
                     </div>
                     <div class="form-group">
                         <label for="budget">Budget estimé</label>
@@ -264,7 +267,7 @@
                 </div>
             </form>
             <div class="contact-info">
-                <p><i class="fas fa-phone"></i> <a href="tel:+33601234567">06 01 23 45 67</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+33695951631">06 95 95 16 31</a></p>
                 <p><i class="fas fa-envelope"></i> <a href="mailto:contact@orb-linteau.fr">contact@orb‑linteau.fr</a></p>
                 <p><i class="fas fa-map-marker-alt"></i> 63B Avenue du 22 Août, 34500 Béziers</p>
                 <p><i class="fas fa-clock"></i> Du lundi au vendredi : 8h–18h</p>
