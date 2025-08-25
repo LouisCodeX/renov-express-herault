@@ -7,19 +7,28 @@
     * Retains the existing responsive grid and typography definitions.
 */
 
-/* Import refined typefaces: Playfair Display for headings and Inter for body text */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap');
+/* Import robust, rustic typefaces: Cormorant Garamond for headings and Work Sans for body text */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap');
 
-/* Base palette definitions (overriding older values). */
+/* Base palette definitions (rustic, sun‑baked) */
 :root {
-  /* Pastel‑based palette inspired by the South of France */
-  --warm-terracotta: #DFA79A;  /* buttons, small highlights */
-  --soft-azure: #B4D7DA;       /* links, active states */
-  --sage-green: #B4C3A7;       /* hover states, secondary buttons */
-  --lavender: #C8BCD7;         /* dividers, badges */
-  --warm-sand: #F6F0E6;        /* main background, card fills */
-  --charcoal: #3D3A34;         /* primary headings and body copy */
-  --white: #ffffff;            /* white */
+  /*
+    The site now uses a palette evoking sun‑bleached plaster, terracotta tiles and Mediterranean vegetation.
+    Ratio guidance: 60 % plaster base, 20 % charcoal, 10 % terracotta, 5 % ochre and 5 % olive/blue.
+  */
+  --warm-terracotta: #C2755C; /* primary buttons and accents (sun‑baked terracotta) */
+  --soft-azure: #6D8A95;      /* dusty blue for links, chips and subtle highlights */
+  --sage-green: #7B8C61;      /* olive green for icons, hover states */
+  --lavender: #D8AA7C;        /* dusty ochre for secondary highlights and tags */
+  --warm-sand: #F4ECE2;       /* plaster base used for backgrounds and cards */
+  --charcoal: #3D3A34;        /* deep charcoal for primary text */
+  --white: #ffffff;
+}
+
+/* Accessibility: focus outline uses the dusty blue accent */
+*:focus {
+  outline: 2px dashed var(--soft-azure);
+  outline-offset: 2px;
 }
 
 * {
@@ -28,7 +37,7 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   color: var(--charcoal);
   background: var(--warm-sand);
   line-height: 1.6;
@@ -41,7 +50,7 @@ header {
 }
 
 header .logo {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 700;
   font-size: 1.4rem;
   margin: 0;
@@ -89,7 +98,8 @@ nav {
 /* Hero */
 .hero {
   position: relative;
-  background: url('pattern_hero.png') no-repeat center/cover;
+  /* Use the rustic abstract pattern for the hero background */
+  background: url('pattern_rustic.png') no-repeat center/cover;
   color: var(--charcoal);
   min-height: 60vh;
   display: flex;
@@ -105,8 +115,8 @@ nav {
   left: 0;
   right: 0;
   bottom: 0;
-  /* Overlay lightened for greater readability */
-  background: rgba(246, 240, 230, 0.8);
+  /* Overlay lightened for the rustic palette */
+  background: rgba(244, 236, 226, 0.85);
 }
 
 .hero-content {
@@ -117,7 +127,7 @@ nav {
 }
 
 .hero-content h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 700;
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -130,9 +140,10 @@ nav {
 }
 
 .cta-btn {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   background: var(--warm-terracotta);
-  color: var(--charcoal);
+  /* Use plaster‑coloured text on terracotta for better contrast */
+  color: var(--warm-sand);
   padding: 0.8rem 1.6rem;
   border-radius: 4px;
   text-decoration: none;
@@ -142,7 +153,8 @@ nav {
 }
 
 .cta-btn:hover {
-  background: #C98C7D;
+  /* Slightly darken the terracotta on hover */
+  background: #aa5f4a;
 }
 
 /* Services */
@@ -181,12 +193,12 @@ nav {
 
 .service-card .icon {
   font-size: 2rem;
-  color: var(--soft-azure);
+  color: var(--sage-green);
   margin-bottom: 1rem;
 }
 
 .service-card h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   margin-bottom: 0.5rem;
   color: var(--charcoal);
 }
@@ -204,7 +216,7 @@ nav {
 .service-card .duration {
   font-weight: 600;
   margin-top: 0.3rem;
-  color: var(--warm-terracotta);
+  color: var(--lavender);
 }
 
 /* Portfolio */
@@ -254,7 +266,7 @@ nav {
 
 .portfolio-caption h4 {
   margin: 0;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 1.1rem;
   margin-bottom: 0.3rem;
 }
@@ -299,7 +311,7 @@ nav {
 
 .about-highlights li i {
   margin-right: 0.5rem;
-  color: var(--soft-azure);
+  color: var(--sage-green);
 }
 
 /* Portrait image in the about section */
@@ -395,6 +407,7 @@ nav {
 .testimonial p {
   font-style: italic;
   margin-bottom: 1rem;
+  color: var(--warm-terracotta);
 }
 
 .testimonial .client {
@@ -439,7 +452,7 @@ nav {
 .blog-card h3 {
   margin-top: 0;
   margin-bottom: 0.8rem;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .blog-card p {
@@ -545,8 +558,8 @@ nav {
 }
 
 .btn-secondary:hover {
-  background: var(--soft-azure);
-  color: var(--charcoal);
+  background: var(--sage-green);
+  color: var(--warm-sand);
 }
 
 /* Footer */
@@ -563,4 +576,14 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Decorative moustache divider.  This element uses a subtle moustache illustration as a motif
+   to hint at the craftsman persona. Place a <div class="moustache-divider"></div> between
+   sections in your HTML to insert this graphic. */
+.moustache-divider {
+  width: 120px;
+  height: 40px;
+  margin: 2rem auto;
+  background: url('moustache.png') no-repeat center/contain;
 }
